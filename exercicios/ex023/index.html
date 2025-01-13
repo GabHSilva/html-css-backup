@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Fazendo tabelas</h1>
+
+    <br>
+
+    <!--TABELA PADRAO-->
+    <div class="tabela" id="tabela1">
+        <table>
+            <caption>
+                <h1>Tabela de dados</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Cidade
+                    </th>
+                    <th scope="col">
+                        População
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>xxx.xxx.xxx</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div> 
+
+    <!--TABELA ZEBRADA-->
+    <div class="tabela" id="tabela2">
+        <table>
+            <caption>
+                <h1>Tabela Zebrada</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Cidade
+                    </th>
+                    <th scope="col">
+                        População
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>xx.xxx.xxx</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>xxx.xxx.xxx</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <!--TABELA MAIS COMPLEXA (SPAN)-->
+    <div class="tabela" id="tabela3">
+        <table>
+            <caption>
+                <h1>Tabela Span</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="col" colspan="3">Filmes Favoritos</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3">Homens</td>
+                    <td>Bruno Mendonça</th>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--TABELA DE TREINO 1-->
+    <div class="tabela" id="tt1">
+        <table>
+            <caption>
+                <h1>Tabela de Treino</h1>
+            </caption>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--TABELA DE TREINO 2-->
+    <div class="tabela" id="tt2">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--TABELA DE TREINO 3-->
+    <div class="tabela" id="tt3">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Área</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th scope="col" colspan="2">Notas</th>
+                    <th scope="col" rowspan="2">Média</th>
+                </tr>
+
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Física</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Química</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Biologia</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+
+                <!--MÉDIA DE EXATAS-->
+
+                <tr>
+                    <th colspan="4" class="thmedia">Média de Exatas</th>
+                    <td class="media">0.0</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Geografia</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                    <td class="notas">0.0</td>
+                </tr>
+
+                <!--MÉDIA DE HUMANAS-->
+
+                <tr>
+                    <th colspan="4" class="thmedia">Média de Humanas</th>
+                    <td class="media">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--TABELA PERSONALIZADA-->
+    <div class="tabela" id="tabela4">
+        <table>
+            <colgroup>
+                <col class="c1">
+                <col class="c2" span="2">
+                <col class="c3">
+                <col class="c1">
+            </colgroup>
+            <h1>Tabela Personalizada</h1>
+            <tr>
+                <td>1A</td>
+                <td>1B</td>
+                <td>1C</td>
+                <td>1D</td>
+                <td>1E</td>
+            </tr>
+
+            <tr>
+                <td>2A</td>
+                <td>2B</td>
+                <td>2C</td>
+                <td>2D</td>
+                <td>2E</td>
+            </tr>
+
+            <tr>
+                <td>3A</td>
+                <td>3B</td>
+                <td>3C</td>
+                <td>3D</td>
+                <td>3E</td>
+            </tr>
+
+            <tr>
+                <td>4A</td>
+                <td>4B</td>
+                <td>4C</td>
+                <td>4D</td>
+                <td>4E</td>
+            </tr>
+        </table>
+    </div>
+
+    
+</body>
+</html>

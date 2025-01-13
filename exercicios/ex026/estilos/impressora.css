@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url(../imagens/back-print.jpg);
+}
+
+main {
+    border: 2px solid black;
+    width: 90vw;
+}
+
+main::after {
+    content: 'Você está imprimindo um conteúdo do Cruso em video feito por Gabriel. Acesse www.cursoemvideo.com';
+    text-decoration: overline;
+}
+
+img#pc {display: none;}
+img#celular {display: none;}
+img#print {display: block;}
+img#tablet {display: none;}
+img#tv {display: none;}

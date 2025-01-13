@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de Fundo</title>
+    <style>
+
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        div.quadrado {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+
+        div#q1 {
+            background-color: darkorange;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, black 20%, aquamarine 70%);
+        }
+
+        div#q3 {
+            background-image: url(Sport_Club_Recife.svg.png);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UFT-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: darkgray url(../imagens/wallpaper01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+menu {
+    padding: 20px;
+    text-align: right;
+}
+
+menu > ul > li {
+    display: inline;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+main img#title {
+    display: block;
+    margin: auto;
+}

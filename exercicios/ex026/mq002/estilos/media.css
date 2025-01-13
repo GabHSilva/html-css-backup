@@ -1,0 +1,20 @@
+@charset "UFT-8";
+
+@media screen and (min-width: 768px) {
+    span#icon {
+        display: none;
+    }
+
+    menu#menun {
+        display: block;
+        padding-left: 10px;
+    }
+
+    menu#menun > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 720px;
+    }
+}

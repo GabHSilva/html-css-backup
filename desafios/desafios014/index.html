@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        table {
+            width: 480px;
+            border-collapse: collapse;
+        }
+
+        thead, th, .nm {
+            background-color: gray;
+            color: white;
+        }
+
+        .media {
+            text-align: left;
+        }
+
+        .nota, .nm {
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            <h1>Tabela de Notas</h1>
+        </caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+
+            <tr>
+                <th scope="row" colspan="4" class="media">Média de Exatas</th>
+                <td class="nm">0.0</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+                <td class="nota">0.0</td>
+            </tr>
+
+            <tr>
+                <th scope="row" colspan="4" class="media">Média de Humanas</th>
+                <td class="nm">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

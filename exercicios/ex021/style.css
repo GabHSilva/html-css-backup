@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkolivegreen;
+    margin: 0px;
+}
+
+header {
+    background-color: darkgray;
+}
+
+header > h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+nav {
+    background-color: rgb(126, 126, 126);
+}
+
+nav > a {
+    margin-left: 0px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main {
+    width: 720px;
+    margin: auto;
+    padding: 0px;
+    
+}
+
+section {
+    background-color: azure;
+    padding-top: 15px;
+}
+
+footer {
+    background-color: rgb(131, 131, 131);
+    text-align: right;
+    padding-right: 10px;
+
+}
+

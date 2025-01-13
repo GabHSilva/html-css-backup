@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+
+/*CONFIGURAÇÃO GLOBAL*/
+
+* {
+    margin: 20px;
+}
+
+div.tabela {
+    overflow-x: scroll;
+}
+
+table {
+    width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/*CONFIG TABELA 1*/
+
+div#tabela1 caption {
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: white;
+    
+}
+
+div#tabela1 thead {
+    background-color: #636363;
+    color: white;
+}
+
+div#tabela1 tfoot {
+    background-color: #636363;
+    color: white;
+    font-weight: bolder;
+}
+
+/*CONFIG TABELA 2*/
+
+div#tabela2 caption {
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: white;
+    
+}
+
+div#tabela2 thead {
+    background-color: #636363;
+    color: white;
+}
+
+div#tabela2 tbody > tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+div#tabela2 tbody > tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+div#tabela2 tfoot {
+    background-color: #636363;
+    color: white;
+    font-weight: bolder;
+}
+
+/*TABELA DE TREINO 1 2 E 3*/
+
+div#tt1 table {
+    width: 300px;
+}
+
+div#tt1 td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#tt2 table {
+    width: 300px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+div#tt2 td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#tt3 table {
+    width: 400px
+}
+
+div#tt3 td {
+    padding: 8px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+div#tt3 th, div#tt3 .notas, div#tt3 .media {
+    text-align: center;
+}
+
+div#tt3 thead, div#tt3 .media, th.thmedia {
+    background-color: #636363;
+    color: white;
+}
+
+div#tt3 .thmedia {
+    text-align: left;
+}
+
+/*CONFIG TABELA 4*/
+
+div#tabela4 table {
+    width: 200px;
+    border: 0px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+div#tabela4 .c1 {
+    background-color: #E3C386;
+}
+
+div#tabela4 .c2 {
+    background-color: #DEA12F;
+}
+
+div#tabela4 .c3 {
+    background-color: #AC7C24;
+}

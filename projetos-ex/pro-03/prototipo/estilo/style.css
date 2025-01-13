@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-size: 1em;
+    background-color: rgb(100, 94, 85);
+}
+
+section {
+    height: 98.5vh;
+    padding: 5px;
+    background-color: burlywood;
+    background-image: url(../imagens/wallpaper01.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section > nav {
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+nav a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+section img {
+    padding-left: 14px;
+}
+
+article {
+    padding-top: 80px;
+    padding-bottom: 32vh;
+}
+
+article #txt {
+    display: inline-block;
+    max-width: 400px;
+    padding-left: 20px;
+    color: white;
+}
+
+div {
+    text-align: center;
+}
+
+section #cxrolagem {
+    display: inline-block;
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}

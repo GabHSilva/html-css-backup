@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Print</title>
+    <style>
+        @media all {
+            * {
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header {
+                padding: 30px;
+                text-align: center;
+            }
+
+            nav {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            nav a {
+                padding-right: 20px;
+                text-decoration: none;
+                color: black;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+                color: red;
+            }
+
+            section {
+                padding: 30px;
+            }
+        }
+    
+        @media only print {
+            header {
+                text-align: left;
+            }
+            
+            nav {
+                display: none;
+            }
+
+            section h2 {
+                border-bottom: 1px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Media Query</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Support</a>
+        </nav>
+        <section>
+            <h2>Curso de HTML5 é bom demais!</h2>
+            <article>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, nesciunt. Voluptates recusandae omnis id obcaecati suscipit temporibus est! Repudiandae voluptatum tenetur quod provident minima, commodi nulla possimus deleniti vero vel recusandae voluptate explicabo non architecto asperiores saepe assumenda unde dignissimos est in maxime. Molestias quis, eos vitae adipisci excepturi mollitia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda, voluptate consequatur nam fugit sapiente culpa amet ducimus soluta voluptatem molestiae illum, ipsam perspiciatis accusamus iusto facilis ratione pariatur? Amet maxime eligendi optio sunt hic harum corrupti, beatae dignissimos numquam eveniet. Ratione minus, maxime placeat nisi earum nostrum iste impedit consequatur libero at quae cupiditate rem optio illum unde aliquid error repudiandae possimus. Possimus ea illo blanditiis aperiam, explicabo tempore magni eaque, in harum perspiciatis fuga sunt iure et omnis consectetur alias totam magnam culpa nobis labore hic enim quia. Obcaecati explicabo, aliquid sequi aliquam at minus commodi odio modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ducimus beatae ullam neque, voluptate eum commodi culpa veniam hic, quibusdam totam quas tempora? Inventore non magnam facilis reprehenderit alias a sunt velit aliquid magni rerum nemo repellat id provident architecto hic beatae enim possimus, amet neque! Atque praesentium aperiam voluptatibus deleniti aliquam quidem eveniet doloremque ex voluptatem. Earum repudiandae tempora fuga inventore. Repellendus adipisci molestiae sapiente ullam quos error doloremque? Quibusdam, aspernatur atque. Fugiat eos dignissimos doloribus. Laudantium, omnis perferendis. Molestias officia, amet in distinctio repudiandae ad commodi recusandae laudantium ducimus, voluptates culpa mollitia nam. Quidem quia illo veniam minima, modi deleniti quas, blanditiis in consectetur eum vero magni ea at architecto delectus ab. Fugit unde molestias temporibus reiciendis soluta dignissimos quasi placeat explicabo, fuga labore a nisi. Nulla consequuntur tempora corporis libero unde voluptatum, beatae impedit nobis illo expedita est ipsa, error accusantium necessitatibus sit itaque recusandae cupiditate ad inventore architecto doloribus laborum ea. Totam sunt et quas modi tempora labore deleniti maxime ipsum cum, repudiandae laborum nostrum quidem ut, voluptatibus, vero ea incidunt placeat quos. Tenetur officia excepturi, totam velit inventore iste. Optio libero sequi quaerat assumenda temporibus vitae aperiam culpa nisi molestiae mollitia minima impedit pariatur expedita, laudantium asperiores repellendus illo hic, error amet eligendi blanditiis saepe nemo. Animi magnam eius inventore necessitatibus excepturi rem, deserunt dignissimos voluptate aliquid qui corrupti veniam quae ipsum, explicabo vel similique. Veritatis rem animi, deserunt beatae, doloremque optio ratione ipsam, perspiciatis similique ea ullam! Consequuntur nesciunt deleniti, ad eos quam perferendis ex in delectus temporibus numquam, et quis quaerat. Ducimus unde, recusandae accusamus, saepe sed reiciendis eaque consequatur praesentium atque aliquam similique quibusdam beatae error minima quidem. Nostrum fugit eveniet deleniti non soluta quis ut eligendi, corporis, quod illum, omnis officiis ipsam ipsa debitis earum hic molestiae quae accusamus? Ratione, ut.
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Media Query</h1>
+        <span class="material-symbols-outlined" id="icon" onclick="clickMenu()">menu</span>
+        <menu id="menun">
+            <ul>
+                <li><a href="#">Opçao 1</a></li>
+                <li><a href="#">Opçao 2</a></li>
+                <li><a href="#">Opçao 3</a></li>
+                <li><a href="#">Opçao 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Criando Media Query</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quod, sed optio, praesentium mollitia officia perspiciatis tempora magnam, cumque asperiores vel. Fugit, repellendus! Blanditiis vitae doloribus suscipit nihil labore quos libero quibusdam, dicta consequatur corporis velit illum eligendi tempora, a necessitatibus repellendus iste inventore, aperiam id expedita voluptates reiciendis temporibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora maxime debitis nam aperiam mollitia dolor impedit adipisci consequatur ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum itaque minus natus error ea reprehenderit impedit culpa nobis quibusdam quod ab corporis fugit, a quia placeat. Molestiae pariatur, consequatur culpa nisi aliquam reiciendis expedita ipsa accusamus voluptates, recusandae cumque suscipit maiores facere, aspernatur deserunt libero! Dolorem rerum, quas possimus officia deserunt enim nisi maiores, nostrum iste amet quam error, itaque animi? Pariatur explicabo consequuntur vel qui praesentium odit eveniet? Quae aliquam optio ea praesentium commodi ex distinctio beatae quod perspiciatis?</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menun.style.display = 'block'
+            } else {
+                menun.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menun.style.display == 'block') {
+                menun.style.display = 'none'
+            } else {
+                menun.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

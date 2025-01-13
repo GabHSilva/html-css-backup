@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+@font-face {
+    font-family: Minecraft;
+    src: url(fonts/Monocraft.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Minecraft', Courier, monospace;
+    font-size: 16px;
+    background-image: url(image/14850924-background_l.webp);
+    color: black;
+}h1 {
+    color: rgb(0, 212, 212);
+    text-decoration: underline;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    background-color: aliceblue;
+}

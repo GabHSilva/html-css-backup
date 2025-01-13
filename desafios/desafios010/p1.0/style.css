@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+
+body {
+    background-color: rgb(252, 228, 197);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #1CE002, #15AD02, #0C6101);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h1 {
+    margin: 0px;
+}
+
+nav {
+    text-align: left;
+    padding: 0px 10px;
+    
+}
+
+.navegation {
+    color: #1CE002;
+    text-decoration: none;
+}
+
+.navegation:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    box-shadow: 3px 2px 5px black;
+    padding: 5px 2px;
+    background-color: white;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+.external {
+    background-color: #15AD02;
+    color: white;
+    text-decoration: none;
+}
+
+.external:visited {
+    background-color: black;
+    color: white;
+}
+
+aside {
+    background-color: #bdffb5;
+    margin: 10px 30px 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #0C6101;
+    padding: 2px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+a {
+    color: aqua;
+}

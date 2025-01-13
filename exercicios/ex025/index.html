@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        html, body {
+            text-align: center;
+        }
+
+        h2 {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+    <!--FORM SEMANTICAMENTE ERRADO-->
+    <form>
+        Nome:
+        <input type="text" name="fnome">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--FORM SEMANTICAMENTE CORRETO-->
+    <p>
+        <form action="cadastro.php" method="get">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+
+    <h2>Formulário: <code>input</code> e <code>fieldset</code></h2>
+    <!--VARIOS TYPES DE INPUT (E A TAG <fieldset>)-->
+
+    <p>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="ifoto">Foto de perfil:</label>
+                <input type="file" name="foto" id="ifoto" accept="image/*">
+            </p>
+
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="text" name="idade" id="iidade" min="1" max="110" placeholder="ex:.18">
+            </p>
+
+            <p>
+                <fieldset style="width: 100px;display: inline-block;">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sex" id="isexmasc" checked>
+                    <label for="isexmasc">Masculino</label>
+                    <input type="radio" name="sex" id="isexfem">
+                    <label for="isexfem">Feminino</label>
+                </fieldset>
+            </p>
+
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}" placeholder="(xx) xxxxx-xxxx">
+            </p>
+
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="mail" id="imail" maxlength="50" size="30" placeholder="example@example.com">
+            </p>
+
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" minlength="3" maxlength="12" size="12">
+            </p>
+
+            <p>
+                <label for="imes">Mês de aniversário:</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+
+            <p>
+                <label for="idata">Dia da compra:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+
+            <p>
+                <label for="ihora">Hora da compra</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#000000">
+            </p>
+
+            <p>
+                <label for="isat">Nível de satisfação:</label>
+                <input type="range" name="sat" id="isat" min="0" max="4" value="2">
+            </p>
+
+            <p>
+                <input type="checkbox" name="aceito" id="iaceito">
+                <label for="iaceito">Aceito os <a href="#">termos de uso</a></label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </p>
+
+    <h2>Formulário: <code>select</code>, <code>option</code>, <code>optgroup</code>, <code>textarea</code> e <code>datalist</code></h2>
+    <!--EXEMPLOS DE SELECT, OPTION, OPTGROUP, TEXT AREA E DATALIST-->
+
+    <p>
+        <form action="cdastro.php" method="post">
+            <p>
+                <label for="imod">Modelo do celular:</label>
+                <select name="mod" id="imod">
+                    <option value="">Escolha...</option>
+                    <optgroup label="Apple">
+                        <option value="AIP1132">iPhone 11 32GB</option>
+                        <option value="AIP11P64">iPhone 11 Pro 64GB</option>
+                        <option value="AIP11MP256">iPhone 11 Pro Max 256GB</option>
+                    </optgroup>
+                    <optgroup label="Samsung">
+                        <option value="SGXYS10">Galaxy S10 Lite</option>
+                        <option value="SGXYS20U128">Galaxy S20 Ultra 128GB</option>
+                        <option value="SGXYN10256">Galaxy Note 10 256GB</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="idesc">Especificações técnicas:</label> <br>
+                <textarea name="desc" id="idesc" cols="40" rows="10" placeholder="Escreva aqui..."></textarea>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <optgroup label="Negócios">
+                        <option value="Administrador"></option>
+                        <option value="Contabilista"></option>
+                        <option value="Gestor de RH"></option>
+                    </optgroup>
+                    <optgroup label="Artes e Design">
+                        <option value="Animador"></option>
+                        <option value="Ator"></option>
+                        <option value="Fotógrafo"></option>
+                    </optgroup>
+                    <optgroup label="Ciências Exatas">
+                        <option value="Analista de Sistemas"></option>
+                        <option value="Estático"></option>
+                        <option value="Matemático"></option>
+                    </optgroup>
+                    <optgroup label="Ciências Humanas">
+                        <option value="Advogado"></option>
+                        <option value="Linguísta"></option>
+                        <option value="Professor"></option>
+                    </optgroup>
+                </datalist>
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </p>
+
+    <h2>Formulário: <code>output</code> e <code>oninput</code>(JavaScript)</h2>
+    <!--EXEMPLO DE COMO USAR O OUTPUT E JS(oninput)-->
+
+    <p>
+        <form action="cadastro.php" method="get" oninput="itot.value = Number (ipreco.value) * Number (iquant.value)">
+            <p>
+                <label for="iprod">Produto:</label>
+                <input type="text" name="prod" id="iprod">
+            </p>
+
+            <p>
+                <label for="ipreco">Preço: R$</label>
+                <input type="text" name="preco" id="ipreco">
+            </p>
+
+            <p>
+                <label for="iquant">Quantidade:</label>
+                <input type="text" name="quant" id="iquant">
+            </p>
+
+            <p>
+                <label for="itot">Total: R$</label>
+                <output name="tot" id="itot">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </p>
+</body>
+</html>
