@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div#container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            background-color: rgb(147, 221, 197);
+        }
+        div#conteudo {
+            text-align: center;
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="conteudo" style="order: 2;">A</div>
+        <div id="conteudo" style="order: 5;">B</div>
+        <div id="conteudo" style="order: -10;">C</div>
+        <div id="conteudo" style="order: 3;">D</div>
+        <div id="conteudo" style="order: 50;">E</div>
+        <div id="conteudo" style="order: 3;">F</div>
+    </div>
+</body>
+</html>
