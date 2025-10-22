@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de item</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template: repeat(4, 100px) / repeat(2, 1fr);
+            border: 3px solid blue;
+        }
+
+        .item {
+            border: 3px solid red;
+        }
+
+        #cx1 {
+            grid-row: 1 / span 2;
+            grid-column: 1 / -1;
+        }
+
+        #cx2 {
+            grid-row: 3 / span 2;
+            grid-column: 1 / 2;
+        }
+
+        #cx3 {
+            grid-row: 3 / span 2;
+            grid-column: 2 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
+    </div>
+</body>
+</html>
